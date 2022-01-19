@@ -1,0 +1,21 @@
+package com.sist.controller;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class InsertDeptController {
+	@Bean
+	public ModelAndView form() {
+		ModelAndView mav = new ModelAndView();
+		
+		return mav;
+	}
+	
+	public ModelAndView submit() {
+		ModelAndView mav = new ModelAndView();
+		
+		return mav;
+	}
+}

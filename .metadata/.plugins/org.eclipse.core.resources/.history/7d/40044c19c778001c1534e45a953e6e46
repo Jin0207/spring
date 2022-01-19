@@ -1,0 +1,19 @@
+스프링 환경설정
+	-xml 파일 
+		-> 옛날 방식
+	-java 클래스
+		-> @(어노테이션)을 붙여서 환경설정을 대신할 수 있음
+		-> 요즘 방식
+		-> @configuration
+		-> 클래스이름 임의
+		-> 메소드 객체 반환
+		-> 메소드 이름 위 @Bean (bean노드 대신)
+		-> 메소드 이름 ( id 속성)
+		
+spring mvc에서는
+내가 등록한 DispatcharServlet의 이름에 해당하는 객체제공을 위한
+beanConfiguration 파일을 다음과 같이 만들어야한다.
+
+서블릿 이름이 "a"라면 a-servlet.xml로 만들어야한다.
+		
+	

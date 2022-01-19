@@ -1,0 +1,36 @@
+package com.sist.dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+
+import com.sist.db.ConnectionProvider;
+import com.sist.vo.DeptVO;
+
+public class DeptDAO {
+	public ArrayList<DeptVO> listDept(){
+		ArrayList<DeptVO> list = new ArrayList<DeptVO>();
+		String sql = "select * from dept order by dno";
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		
+		try {
+			conn = ConnectionProvider.getConnection();
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(sql);
+			
+			while(rs.next()) {
+				DeptVO d = new DeptVO(rs.getInt(1), rs.getString(2), rs.getString(3));
+				list.add(d);
+			}
+		} catch (Exception e) {
+			System.out.println("예외발생:" + e.getMessage());
+		}finally {
+			ConnectionProvider.close(conn, stmt, rs);
+		}
+		
+		return list;
+	}
+}

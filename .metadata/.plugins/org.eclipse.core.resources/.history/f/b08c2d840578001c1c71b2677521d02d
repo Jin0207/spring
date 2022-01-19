@@ -1,0 +1,11 @@
+package com.sist.exam01;
+
+public class Person {
+	public Person(String name) {
+		System.out.println("매개변수지닌 생성자 동작");
+	}
+
+	public void sayHello() {
+		System.out.println("Hello");
+	}
+}

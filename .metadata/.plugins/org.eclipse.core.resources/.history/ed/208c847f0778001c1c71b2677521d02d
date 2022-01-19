@@ -1,0 +1,11 @@
+package com.sist.exam02;
+
+import org.springframework.context.ApplicationContext;
+
+public class DeptTest {
+
+	public static void main(String[] args) {
+		ApplicationContext context = 
+	}
+
+}

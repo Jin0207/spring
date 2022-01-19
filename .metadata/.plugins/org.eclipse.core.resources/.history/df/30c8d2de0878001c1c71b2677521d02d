@@ -1,0 +1,6 @@
+package com.sist.exam03;
+
+public class SystemMonitor {
+	private long periodTime;
+	
+}

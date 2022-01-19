@@ -1,0 +1,28 @@
+package com.sist.dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+
+import com.sist.db.ConnectionProvider;
+import com.sist.vo.CustomerVO;
+
+public class CustomerDAO {
+	
+	public ArrayList<CustomerVO> listAll(){
+		ArrayList<CustomerVO> list = new ArrayList<CustomerVO>();
+		String sql = "select * from customer order by custid";
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		
+		try {
+			conn = ConnectionProvider.getConnection();
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(null)
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

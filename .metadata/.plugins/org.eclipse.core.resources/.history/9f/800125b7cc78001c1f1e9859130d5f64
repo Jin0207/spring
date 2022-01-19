@@ -1,0 +1,23 @@
+package com.sist.db;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class ConnectionProvider {
+	
+	public static Connection getConnection() {
+		Connection conn = null;
+		String driver = "oracle.jdbc.driver.OracleDriver";
+		String url = "jdbc:oracle:thin:@localhost:1521:XE";
+		String username = "c##madang";
+		String password = "madang";
+		try {
+			Class.forName(driver);
+			conn = DriverManager.getConnection(url, username, password);
+		} catch (Exception e) {
+			e.getStackTrace();
+		}
+		return conn;
+	}
+
+}

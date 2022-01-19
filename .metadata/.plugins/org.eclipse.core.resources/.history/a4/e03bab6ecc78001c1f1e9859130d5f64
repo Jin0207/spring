@@ -1,0 +1,22 @@
+package com.sist.db;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class ConnectionProvider {
+	
+	public static Connection getConnection() {
+		Connection conn = null;
+		String driver = "";
+		String url = "";
+		String username = "";
+		String password = "";
+		try {
+			Class.forName(driver);
+			conn = DriverManager.getConnection(url, username, password);
+		} catch (Exception e) {
+			e.getStackTrace();
+		}
+	}
+
+}

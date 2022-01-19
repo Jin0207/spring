@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- 기본생성자를 통해서 객체생성을하는데 현재 클래스에 기본생성자 정의x 매개변수 생성자 정의, 기본생성자 자동제공x 
+		기본생성자가 없기 때문에 오류
+		1.기본생성자 정의하거나
+		2. 매개변수를 갖는 생성자가 동작하도록 한다.
+	-->
+	<bean id="person" class="com.sist.exam01.Person"/>
+</beans>
