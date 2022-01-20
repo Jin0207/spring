@@ -1,0 +1,17 @@
+ORM
+Object Relation Mapping
+	Object		: 	자바객체
+	Relation	: 	데이터베이스 테이블
+
+종류
+	mybatis
+		공공 프로젝트
+		https://blog.mybatis.org/
+		
+		Products
+		MyBatis 3	SQL Mapping Framework for Java	download | docs
+		docs 클릭
+		
+	hibernate
+	
+	

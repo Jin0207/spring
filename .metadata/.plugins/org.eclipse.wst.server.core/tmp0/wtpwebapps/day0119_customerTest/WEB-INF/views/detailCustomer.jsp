@@ -15,5 +15,6 @@
 	고객전화: ${c.phone }
 	<hr>
 	<a href="updateCustomer.do?custid=${c.custid }">수정</a>
+	<a href="deleteCustomer.do?custid=${c.custid }">삭제</a>
 </body>
 </html>

@@ -11,6 +11,26 @@ import com.sist.vo.CustomerVO;
 
 public class CustomerDAO {
 	
+	public int deleteCustomer(int custid) {
+		int re = -1;
+		String sql = "delete from customer where custid=?";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		
+		try {
+			conn = ConnectionProvider.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, custid);
+			re = pstmt.executeUpdate();
+		} catch (Exception e) {
+			System.out.println("예외발생:" + e.getMessage());
+		}finally {
+			ConnectionProvider.close(conn, pstmt);
+		}
+		
+		return re;
+	}
+	
 	public int updateCustomer(CustomerVO c) {
 		int re = -1;
 		String sql = "update customer set name=?, address=?, phone=? where custid=?";
