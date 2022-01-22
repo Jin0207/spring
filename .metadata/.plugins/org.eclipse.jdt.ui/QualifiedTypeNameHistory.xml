@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.sist.exam02.MessageBeanEn"/>
-    <fullyQualifiedTypeName name="com.sist.exam02.MessageBeankr"/>
-    <fullyQualifiedTypeName name="org.springframework.core.io.Resource"/>
-    <fullyQualifiedTypeName name="org.springframework.core.io.FileSystemResource"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactory"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.xml.XmlBeanFactory"/>
-    <fullyQualifiedTypeName name="com.sist.exam03.MessageBean"/>
-    <fullyQualifiedTypeName name="com.sist.exam01.MessageBean"/>
-    <fullyQualifiedTypeName name="com.sist.dao.MemberDAO"/>
     <fullyQualifiedTypeName name="java.beans.beancontext.BeanContext"/>
     <fullyQualifiedTypeName name="org.apache.commons.io.FileSystemUtils"/>
     <fullyQualifiedTypeName name="com.sist.exam03.SmsSender"/>
@@ -40,24 +31,33 @@
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="com.sist.db.ConnectionProvider"/>
+    <fullyQualifiedTypeName name="com.sist.dao.DeptDAO"/>
+    <fullyQualifiedTypeName name="org.springframework.web.portlet.bind.annotation.RenderMapping"/>
+    <fullyQualifiedTypeName name="com.sist.vo.DeptVO"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="com.sist.vo.EmpVO"/>
+    <fullyQualifiedTypeName name="com.sist.dao.EmpDAO"/>
+    <fullyQualifiedTypeName name="com.sist.dao.GoodsDAO"/>
+    <fullyQualifiedTypeName name="com.sist.vo.GoodsVO"/>
+    <fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactory"/>
     <fullyQualifiedTypeName name="java.io.Reader"/>
     <fullyQualifiedTypeName name="org.apache.ibatis.io.Resources"/>
     <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactoryBuilder"/>
-    <fullyQualifiedTypeName name="com.sist.dao.DeptDAO"/>
-    <fullyQualifiedTypeName name="org.springframework.web.portlet.bind.annotation.RenderMapping"/>
-    <fullyQualifiedTypeName name="com.sist.vo.DeptVO"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
-    <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="com.sist.dao.BoardDAO"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="com.sist.vo.EmpVO"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
     <fullyQualifiedTypeName name="com.sist.db.DBManager"/>
-    <fullyQualifiedTypeName name="com.sist.dao.EmpDAO"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="com.sist.vo.BoardVO"/>
+    <fullyQualifiedTypeName name="org.springframework.web.multipart.MultipartFile"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 </qualifiedTypeNameHistroy>

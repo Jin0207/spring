@@ -9,7 +9,7 @@
 </head>
 <body>
 <%
-	//DispatcherServlet
+	response.sendRedirect("hello.do");
 %>
 </body>
 </html>

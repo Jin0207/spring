@@ -1,8 +1,6 @@
 #Tomcat publish data
-#Thu Jan 20 17:06:42 KST 2022
-org.eclipse.jst.jee.server\:/binary\:C\:\\spring\\day0119\\src\\main\\webapp\\WEB-INF\\lib\\hanbTest.war=WEB-INF/lib/hanbTest.war
-org.eclipse.jst.jee.server\:/binary\:C\:\\spring\\day0119_customerTest\\src\\main\\webapp\\WEB-INF\\lib\\hanbTest.war=WEB-INF/lib/hanbTest.war
+#Fri Jan 21 17:39:46 KST 2022
+org.eclipse.jst.jee.server\:/binary\:C\:\\spring\\day0121\\src\\main\\webapp\\WEB-INF\\lib\\hanbTest.war=WEB-INF/lib/hanbTest.war
 org.eclipse.jst.jee.server\:/binary\:C\:\\spring\\day0120_deptTest\\src\\main\\webapp\\WEB-INF\\lib\\hanbTest.war=WEB-INF/lib/hanbTest.war
 org.eclipse.jst.jee.server\:/binary\:C\:\\spring\\day0120_deptTest_mybatis\\src\\main\\webapp\\WEB-INF\\lib\\hanbTest.war=WEB-INF/lib/hanbTest.war
-org.eclipse.jst.jee.server\:/binary\:C\:\\spring\\day0120_customerTest\\src\\main\\webapp\\WEB-INF\\lib\\hanbTest.war=WEB-INF/lib/hanbTest.war
-org.eclipse.jst.jee.server\:/binary\:C\:\\spring\\day0119_deptTest\\src\\main\\webapp\\WEB-INF\\lib\\hanbTest.war=WEB-INF/lib/hanbTest.war
+org.eclipse.jst.jee.server\:/binary\:C\:\\spring\\day0121_boardTest\\src\\main\\webapp\\WEB-INF\\lib\\hanbTest.war=WEB-INF/lib/hanbTest.war
