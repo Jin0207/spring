@@ -1,0 +1,45 @@
+DB Connection Pool
+	      <dataSource type="POOLED">
+*Pool
+	모으다
+	
+==> DB Connection을 많이 모아 놓은 것
+	대부분의 웹서비스는 데이터베이스와 연결하는 것이 일반적
+	한꺼번에 많은 사용자가 데이터베이스 연결을 시도할 때,
+	그때 그때마다 DB연결을 하려면 서버의 부담이 늘어나고 
+	사용자의 대기시간은 증가할 수 있다.
+	이때, 미리 일정량의(서비스규모에따라달라짐( Connection을 미리 만들어둠녀
+	서버의 부담을 줄일 수 있고, 사용자의 대기시간을 줄일 수 있다.	
+		대기시간을 줄이기위해서는 바람넣은 튜브를 많이 만들어놔야해
+		사용자가 요청했을 때 그제서야 Connection을 맺어주면 지연됨
+		미리 일정량의 Connection 객체를 가지고 잇으면
+		클라이언트의 대기시간을 줄일  수 있다.
+		
+		
+mybatis
+- 대부분의 웹서비스는 데이터베이스와 연동하는 것이 일반적
+	이때, 데이터베이스 테이블의 검색 결과를 자바클래스로 만들거나 자바 객체의 내용을 데이터베이스 테이블에
+	넣어야하는 경우가 많다.
+	이때, 자바객체와 데이터베이스 테이블에 일일이 매핑해주는것은 굉장히 번거로운 코딩작업을 수행해야한다.
+	
+	이와같이
+	자바객체와 데이터베이스테이블을 매핑해주는 프레임워크들을 ORM(Object Relation Mapping)
+	ORM(Object Relation Mapping)
+	자바객체/ 관계형 데이터베이스에서의 테이블 / 설정 
+	
+	ORM의 종류
+		- hibernate
+		- mybatis
+	
+	
+	String sql = "select * from emp where eno=?";
+	...
+	ResultSet rs = stmt.executeQuery();
+	
+	if(rs.next()){
+		EmpVO e = new EmpVO();
+		//아래 코드들이 매핑
+		e.setEno(rs.getInt(1));
+		e.setEname(rs.getString(2));
+		..
+	}

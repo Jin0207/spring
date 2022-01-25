@@ -34,12 +34,7 @@ public class CustomerController {
 	@RequestMapping("/detailCustomer.do")
 	public ModelAndView detail(int custid) {
 		ModelAndView mav = new ModelAndView();
-		/*
-		CustomerVO c = dao.getCustomer(custid);
-		mav.addObject("c",c);
-		*/
 		mav.addObject("c", dao.getCustomer(custid) );
-		//mav.setViewName("detailCustomer");
 		return mav;
 	}
 	

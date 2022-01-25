@@ -156,7 +156,7 @@
       <Context docBase="day0121" path="/day0121" reloadable="true" source="org.eclipse.jst.jee.server:day0121"/>
       <Context docBase="hello00" path="/hello00" reloadable="true" source="org.eclipse.jst.jee.server:hello00"/>
       <Context docBase="day0120_deptTest_mybatis" path="/day0120_deptTest_mybatis" reloadable="true" source="org.eclipse.jst.jee.server:day0120_deptTest_mybatis"/>
-      <Context docBase="day0120_deptTest" path="/day0120_deptTest" reloadable="true" source="org.eclipse.jst.jee.server:day0120_deptTest"/><Context docBase="day0121_boardTest" path="/day0121_boardTest" reloadable="true" source="org.eclipse.jst.jee.server:day0121_boardTest"/></Host>
+      <Context docBase="day0120_deptTest" path="/day0120_deptTest" reloadable="true" source="org.eclipse.jst.jee.server:day0120_deptTest"/><Context docBase="day0121_boardTest" path="/day0121_boardTest" reloadable="true" source="org.eclipse.jst.jee.server:day0121_boardTest"/><Context docBase="day0120_customerTest" path="/day0120_customerTest" reloadable="true" source="org.eclipse.jst.jee.server:day0120_customerTest"/><Context docBase="day0124" path="/day0124" reloadable="true" source="org.eclipse.jst.jee.server:day0124"/><Context docBase="boardTest" path="/boardTest" reloadable="true" source="org.eclipse.jst.jee.server:boardTest"/></Host>
     </Engine>
   </Service>
 </Server>

@@ -8,6 +8,9 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="Ma"/>
+			<item value="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"/>
+			<item value="comn"/>
 			<item value="c."/>
 			<item value="cONNECTION"/>
 		</list>

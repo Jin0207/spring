@@ -19,12 +19,12 @@ public class InsertCustomerController {
 		this.dao = dao;
 	}
 	
-	@RequestMapping(method = RequestMethod.GET)
+	@RequestMapping(value = "/insertCustomer.do" ,method = RequestMethod.GET)
 	public void form() {
 		
 	}
 	
-	@RequestMapping(method = RequestMethod.POST)
+	@RequestMapping(value = "/insertCustomer.do",method = RequestMethod.POST)
 	public ModelAndView submit(CustomerVO c) {
 		ModelAndView mav = new ModelAndView();
 		int re = dao.insert(c);

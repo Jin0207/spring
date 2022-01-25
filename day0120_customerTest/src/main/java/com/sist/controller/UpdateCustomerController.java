@@ -20,14 +20,14 @@ public class UpdateCustomerController {
 		this.dao = dao;
 	}
 
-	@RequestMapping(method= RequestMethod.GET)
+	@RequestMapping(value="/updateCustomer.do",method= RequestMethod.GET)
 	public ModelAndView form(int custid) {
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("c", dao.getCustomer(custid));
 		return mav;
 	}
 	
-	@RequestMapping(method = RequestMethod.POST)
+	@RequestMapping(value="/updateCustomer.do",method = RequestMethod.POST)
 	public ModelAndView submit(CustomerVO c) {
 		ModelAndView mav = new ModelAndView();
 		int re = dao.updateCustomer(c);

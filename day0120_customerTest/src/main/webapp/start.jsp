@@ -10,8 +10,7 @@
 </head>
 <body>
 <%
-	//DispatcherServlet
-	//CharacterEncodingFilter
+	response.sendRedirect("listCustomer.do");
 %>
 </body>
 </html>
