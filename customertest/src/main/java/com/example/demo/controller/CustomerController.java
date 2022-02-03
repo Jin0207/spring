@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.dao.CustomerDao;
@@ -27,5 +28,51 @@ public class CustomerController {
 	public void list(Model model) {
 		model.addAttribute("list", dao.findAll());
 	}
+	@RequestMapping(value = "insertCustomer.do", method = RequestMethod.GET)
+	public void insertForm() {
+	}
 	
+	@RequestMapping(value = "insertCustomer.do", method = RequestMethod.POST)
+	public ModelAndView insert(CustomerVO c) {
+		ModelAndView mav = new ModelAndView("redirect:/listCustomer.do");
+		int re = dao.insert(c);
+		if(re != 1) {
+			mav.setViewName("error");
+			mav.addObject("msg", "고객등록에 실패하였습니다.");
+		}
+		return mav;
+	}
+	@RequestMapping("/detailCustomer.do")
+	public void detail(Model model,int custid) {
+		model.addAttribute("c", dao.findByNo(custid));
+	}
+	
+	@RequestMapping(value = "updateCustomer.do", method = RequestMethod.GET)
+	public void updateForm(Model model, int custid) {
+		model.addAttribute("c", dao.findByNo(custid));
+	}
+	
+	@RequestMapping(value = "updateCustomer.do", method = RequestMethod.POST)
+	public ModelAndView updateForm(CustomerVO c) {
+		ModelAndView mav = new ModelAndView("redirect:/listCustomer.do");
+		int re = dao.update(c);
+		if(re != 1) {
+			mav.setViewName("error");
+			mav.addObject("msg", "고객정보수정에 실패하였습니다.");
+		}
+		return mav;
+	}
+	
+	@RequestMapping("/deleteCustomer.do")
+	public ModelAndView delete(int custid) {
+		ModelAndView mav = new ModelAndView("redirect:/listCustomer.do");
+		int re = dao.delete(custid);
+		
+		if(re != 1) {
+			mav.setViewName("error");
+			mav.addObject("msg", "고개정보 삭제에 실패하였습니다.");
+		}
+		
+		return mav;
+	}
 }

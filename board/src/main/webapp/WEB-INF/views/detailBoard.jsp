@@ -9,12 +9,14 @@
 <body>
 	<h3>게시물 상세보기</h3>
 	<a href="updateBoard?no=${b.no }">수정</a>
+	<a href="deleteBoard?no=${b.no }">삭제</a>
 	<hr>
 	번호: ${b.no }<br>
 	제목: ${b.title }<br>
 	작성자: ${b.writer }<br>
 	등록일: ${b.regdate }<br>
 	조회수: ${b.hit }<br>
+	ip 주소: ${b.ip }<br>
 	내용: <br>
 	<textarea cols="80" rows="10" readonly="readonly">${b.content }</textarea><br>
 	<img src="upload/${b.fname }" width="300" height="300">

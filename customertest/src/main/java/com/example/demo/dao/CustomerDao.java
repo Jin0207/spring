@@ -13,4 +13,20 @@ public class CustomerDao {
 	public List<CustomerVO> findAll(){
 		return DBManager.findAll();
 	}
+	
+	public CustomerVO findByNo(int custid) {
+		return DBManager.findByNo(custid);
+	}
+	
+	public int update(CustomerVO c) {
+		return DBManager.update(c);
+	}
+	
+	public int delete(int custid) {
+		return DBManager.delete(custid);
+	}
+	
+	public int insert(CustomerVO c) {
+		return DBManager.insert(c);
+	}
 }

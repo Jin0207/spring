@@ -16,4 +16,6 @@ public class BoardVO {
 	private int hit;
 	private String fname;
 	private MultipartFile uploadFile;
+	private String pwd;
+	private String ip;
 }

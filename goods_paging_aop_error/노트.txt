@@ -1,0 +1,30 @@
+select no, name, price, qty, fname from
+(select rownum num, no, name, price, qty, fname from
+(select no, name, price, qty, fname from goods order by no))
+where num between 1 and 10;
+
+
+create table sistlog(
+	no number primary key,
+	uri varchar2(50),
+	ip		 varchar2(20),
+	time	 varchar2(50),
+	stay	 number
+);
+
+create sequence seq_sistlog;
+
+시퀀스:
+	어떤 컬럼이 숫자 일때
+	사용자가 입력하지 않고 자동으로 순번을 매겨주기 위해 사용
+
+create table exceptionlog(
+	no number primary key,
+	msg varchar2(100),
+	uri varchar2(20),
+	time	 date
+);
+
+create sequence seq_exceptionlog;
+
+	

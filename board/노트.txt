@@ -1,0 +1,23 @@
+alter table board add pwd varchar2(20);
+alter table board add ip varchar2(20);
+--
+	mybatis 매핑파일에서 값에대한 value에 대한 변수처리는 #{변수명}
+  <select id="findByNo" resultType="boardVO">
+  	select * from board where no=#{no}
+  </select>
+  
+  mybatis 매핑파일에서 컬럼이름에대한 변수처리는 ${변수명}
+   <select id="findAll" resultType="boardVO">
+    select * from board order by ${orderColumn}
+  </select>
+  
+ --
+ 	
+ 	insert into board(no,title,writer,content, regdate, hit, fname, pwd)
+ 	values((select max(no)+1 from board),'A','A','A',sysdate,0,null,'a');
+ 	
+--
+	select no, title, writer, content, regdate, hit, fname, pwd, ip from(
+	select rownum num, no, title, writer, content, regdate, hit, fname, pwd, ip from 
+	(select no, title, writer, content, regdate, hit, fname, pwd, ip from board order by no))
+	where num between 11 and 20; 	

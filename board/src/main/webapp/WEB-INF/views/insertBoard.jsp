@@ -10,8 +10,10 @@
 	<h3>게시물 등록</h3>
 	<hr>
 	<form action="insertBoard" method="post" enctype="multipart/form-data">
+		번호: <input type="text" name="no" value="${no }" readonly="readonly"><br>
 		제목: <input type="text" name="title"><br>
 		작성자: <input type="text" name="writer"><br>
+		비밀번호: <input type="password" name="pwd"><br>
 		내용: <br>
 		<textarea cols="80" rows="10" name="content"></textarea><br>
 		파일업로드: <input type="file" name="uploadFile"><br>

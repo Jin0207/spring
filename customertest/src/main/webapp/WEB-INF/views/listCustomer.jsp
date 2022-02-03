@@ -9,6 +9,7 @@
 </head>
 <body>
 	<h3>고객 목록</h3>
+	<a href="insertCustomer.do">신규고객등록</a>
 	<hr>
 	<table border="1" width="80%">
 		<tr>
@@ -18,7 +19,9 @@
 		<c:forEach var="c" items="${list }">
 			<tr>
 				<td>${c.custid }</td>
-				<td>${c.name }</td>
+				<td>
+					<a href="detailCustomer.do?custid=${c.custid }">${c.name }</a>
+				</td>
 			</tr>
 		</c:forEach>
 	</table>

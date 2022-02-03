@@ -1,0 +1,22 @@
+  advice의 종류
+  	-	before
+  		핵심 관심사항(메소드)을 동작하기 전에 수행하는 어드바이스
+0  	-	after returning
+  		핵심관심사항(메소드)이 성공적으로 완료되었을 때에 수행하는 어드바이스
+  	-	after throwing
+  		핵심관심사항(메소드)에서 오류가 발생하였을 때 수행하는 어드바이스
+  	-	after
+  		핵심관심사항(메소드)이 성공적으로 완료되든, 오류가 발생하든, 무조건 수행하는 어드바이스
+  	-	around
+  		핵심관심사항이 동작하기 전에도 수행할 일이 있고 동작한 후에도 수행할 일이 있을 때 사용하는 어드바이스
+  		
+ 
+ create table exceptionlog(
+ 	no number primary key,
+ 	uri varchar2(100),
+ 	ip varchar2(50),
+ 	error_code varchar2(10),
+ 	time date
+ );
+ 
+ 

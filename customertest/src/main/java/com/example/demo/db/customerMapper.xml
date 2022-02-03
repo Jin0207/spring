@@ -3,7 +3,19 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="customer">
-  <select id="findAll" resultType="CustomerVO">
+  <select id="findAll" resultType="customerVO">
     select * from customer order by custid
+  </select>
+  <insert id="insert" parameterType="customerVO">
+  	insert into customer values(#{custid}, #{name}, #{address}, #{phone})
+  </insert>
+  <update id="update" parameterType="customerVO">
+  	update customer set name=#{name}, address=#{address}, phone=#{phone} where custid=#{custid}
+  </update>
+  <delete id="delete" parameterType="int">
+  	delete customer where custid=#{custid}
+  </delete>
+  <select id="findByNo" resultType="customerVO">
+  	select * from customer where custid=#{custid}
   </select>
 </mapper>

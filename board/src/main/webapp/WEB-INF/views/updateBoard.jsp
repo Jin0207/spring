@@ -11,8 +11,9 @@
 	<hr>
 	<form action="updateBoard" method="post" enctype="multipart/form-data">
 		<input type="hidden" name="no" value="${b.no }">
-		제목: <input type="text" name="title" value="${b.title }" readonly="readonly"><br>
-		작성자: <input type="text" name="writer" value="${b.writer }"><br>
+		제목: <input type="text" name="title" value="${b.title }"><br>
+		작성자: <input type="text" name="writer" value="${b.writer }" readonly="readonly"><br>
+		게시물비밀번호: <input type="password" name="pwd"><br>
 		내용: <br>
 		<textarea cols="80" rows="10" name="content">${b.content }</textarea><br>
 		파일업로드: <input type="file" name="uploadFile"><br>

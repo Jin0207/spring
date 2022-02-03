@@ -1,0 +1,16 @@
+회원정보를 관리할 테이블 생성
+
+create table member(
+	id varchar2(20) primary key,
+	pwd varchar2(20),
+	name varchar2(20),
+	phone varchar2(20),
+	email varchar2(50),
+	total number
+);
+
+insert into member values('jin', '0000', '임상진', '01055873780', 'hkhaoo@naver.com', 18000);
+insert into member values('kkk','2222','임하연','01029853667','kkk@naver.com',120);
+
+update member set phone= '01080072464' where name='노유나';
+
